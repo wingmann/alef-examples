@@ -9,7 +9,6 @@ endif()
 
 set(PROJECT_INCLUDE_DIRS
     "${CMAKE_SOURCE_DIR}/lib/alef-core/include"
-    "${CMAKE_SOURCE_DIR}/lib/julianah/include"
-    "${CMAKE_SOURCE_DIR}/include")
+    "${CMAKE_SOURCE_DIR}/lib/julianah/include")
 
 add_subdirectory(src)
