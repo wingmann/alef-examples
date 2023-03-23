@@ -7,8 +7,17 @@ else()
     set(CMAKE_CXX_FLAGS "-std=c++20 -Werror -Wall -Wextra -Wpedantic")
 endif()
 
-set(PROJECT_INCLUDE_DIRS
-    "${CMAKE_SOURCE_DIR}/lib/alef-core/include"
-    "${CMAKE_SOURCE_DIR}/lib/julianah/include")
+set(ALEF_INCLUDE_PATH
+    "${CMAKE_SOURCE_DIR}/lib/alef/include"
+    "${CMAKE_SOURCE_DIR}/lib/biginteger/include"
+    "${CMAKE_SOURCE_DIR}/lib/cast/include"
+    "${CMAKE_SOURCE_DIR}/lib/concepts/include"
+    "${CMAKE_SOURCE_DIR}/lib/containers/include"
+    "${CMAKE_SOURCE_DIR}/lib/err-fusion/include"
+    "${CMAKE_SOURCE_DIR}/lib/iterators/include"
+    "${CMAKE_SOURCE_DIR}/lib/julianah/include"
+    "${CMAKE_SOURCE_DIR}/include")
+
+set(PROJECT_INCLUDE_DIRS ${ALEF_INCLUDE_PATH})
 
 add_subdirectory(src)
