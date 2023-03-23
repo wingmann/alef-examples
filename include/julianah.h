@@ -1,0 +1,6 @@
+#ifndef ALEF_EXAMPLES_JULIANAH_H
+#define ALEF_EXAMPLES_JULIANAH_H
+
+void hello_json();
+
+#endif // ALEF_EXAMPLES_JULIANAH_H

@@ -1,11 +1,6 @@
-#include <alef/serializing.h>
-
-#include <iostream>
+#include "julianah.h"
 
 int main(int argc, char** argv) {
-    alf::ser::julianah obj{};
-    obj["text"] = "Hello, Alef!";
-
-    std::cout << obj.dump();
+    hello_json();
     return 0;
 }
